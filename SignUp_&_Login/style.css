@@ -1,0 +1,155 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: 'Roboto', sans-serif;
+}
+.container{
+	width: 100%;
+	height: 100vh;
+	background-image: linear-gradient(to right, #00b09b, #96c93d);
+	background-size: cover;
+	padding-left: 3%;
+	padding-right: 3%;
+	box-sizing: border-box;
+}
+.navbar{
+	height: 12%;
+	display: flex;
+	align-items: center;
+}
+.logo{
+	width: 70px;
+	cursor: pointer;
+}
+.menu-icon{
+	width: 30px;
+	cursor: pointer;
+	margin-left: 40px;
+}
+nav{
+	flex: 1;
+	text-align: right;
+}
+nav ul li{
+	list-style: none;
+	display: inline-block;
+	margin-left: 60px;
+}
+nav ul li a{
+	text-decoration: none;
+	color: #fff;
+	font-size: 14px;
+}
+.row{
+	display: flex;
+	height: 88%;
+	align-items: center;
+}
+.col{
+	flex-basis: 80%;
+}
+.signup-img{
+	width: 500px;
+	height: 400px;
+}
+
+
+
+
+.wrapper{
+	width: 330px;
+	padding: 2rem 1rem;
+	margin: 50px auto;
+	background-color: #fff;
+	border-radius: 10px;
+	text-align: center;
+	box-shadow: 0 20px 35px rgba(0, 0, 0, 0.1);
+	float: right;
+}
+
+h1{
+	font-size: 2rem;
+	color: #07001f;
+	margin-bottom: 1.2rem;
+}
+
+form input{
+	width: 80%;
+	outline: none;
+	border: 1px solid #fff;
+	padding: 12px 20px;
+	margin-bottom: 10px;
+	border-radius: 20px;
+	background: #e6ffe6;
+}
+
+form select{
+	width: 93%;
+	outline: none;
+	border: 1px solid #fff;
+	padding: 12px 20px;
+	margin-bottom: 10px;
+	border-radius: 20px;
+	background: #e6ffe6;
+}
+ 
+button{
+	font-size: 1rem;
+	margin-top: 1.8rem;
+	padding: 10px 0;
+	border-radius: 20px;
+	outline: none;
+	border: none;
+	width: 90%;
+	color: #fff;
+	cursor: pointer;
+	background: limegreen;
+	transition: transform 0.5s;
+}
+button:hover{
+	transform: translateY(-10px);
+	background-color: #009933;
+	color: #fff;
+}
+
+input:focus{
+	border: 1px solid rgb(192, 192, 192);
+}
+
+.terms {
+	margin-top: 0.2rem;
+}
+.terms input{
+	height: 1em;
+	width: 1em;
+	vertical-align: middle;
+	cursor: pointer;
+}
+.terms label{
+	font-size: 0.7rem;
+}
+.terms a{
+	color: #009933;
+	text-decoration: none;
+}
+
+.member{
+	font-size: 0.8rem;
+	margin-top: 1.4rem;
+	color: #000;
+}
+.member a{
+	color: limegreen;
+	text-decoration: none;
+}
+
+.recover{
+	text-align: right;
+	font-size: 0.7rem;
+	margin: 0.3rem 1.4rem 0 0;
+}
+
+.recover a{
+	text-decoration: none;
+	color: #009933;
+}
