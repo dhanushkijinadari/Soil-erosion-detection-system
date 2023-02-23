@@ -1,0 +1,244 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    list-style: none;
+
+}
+:root{
+    background-color: #bcffd5;
+    color: black;
+}
+body{
+    min-height: 100vh;
+    background-color: #bcffd5;
+    color: rgb(0, 36, 15);
+}
+header{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: transparent;
+    padding: 28px 12%;
+    transition: all .50s ease;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    position: absolute;
+    left: 30px;
+    top: 10px;
+    
+}
+.logo i{
+    color: limegreen;
+    font-size: 28px;
+    
+}
+.logo span{
+    color: rgb(0, 36, 15);
+    font-size: 1.7rem;
+    font-weight: 600;
+}
+.navbar{
+    display: flex;
+    position: absolute;
+    right: 0px;
+}
+.navbar a{
+    color: rgb(0, 36, 15);
+    font-size: 1.1rem;
+    font-weight: 500;
+    padding: 5px 0;
+    margin: 0px 30px;
+    transition: all .50s ease;
+}
+.navbar a:hover{
+    color: limegreen;
+}
+.navbar a.active{
+    color: limegreen;
+}
+
+
+.navbar i{
+    color: rgb(0, 36, 15); 
+    margin-right: 7px;
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+#menu-icon{
+    font-size: 35px;
+    color: rgb(0, 36, 15);
+    cursor: pointer;
+    z-index: 10001;
+    display: none;
+    position: absolute;
+    right: 10px;
+}
+.row{
+	display: flex;
+	height: auto;
+	align-items: center;
+}
+
+.wrapper{
+	width: 330px;
+    height: auto;
+    position: relative;
+    align-items : center;
+    justify-content: center;
+	padding: 1rem 1rem;
+	margin: 50px auto;
+	background-color: #fff;
+	border-radius: 10px;
+	text-align: center;
+	box-shadow: 0 20px 35px rgba(0, 0, 0, 0.1);
+	flex-direction: column;
+}
+
+h1{
+	font-size: 1.7rem;
+	color: #07001f;
+	margin-bottom: 1.2rem;
+}
+
+form input{
+	width: 80%;
+	outline: none;
+	border: 1px solid #fff;
+	padding: 8px 10px;
+	margin-bottom: 5px;
+	border-radius: 20px;
+	background: #e6ffe6;
+	position: relative;
+}
+
+form select{
+	width: 80%;
+	outline: none;
+	border: 1px solid #fff;
+	padding: 8px 10px;
+	margin-bottom: 5px;
+	border-radius: 20px;
+	background: #e6ffe6;
+}
+ 
+button{
+	font-size: 1rem;
+	margin-top: 1.5rem;
+	padding: 5px 0;
+	border-radius: 20px;
+	outline: none;
+	border: none;
+	width: 40%;
+	color: #fff;
+	cursor: pointer;
+	background: limegreen;
+	transition: transform 0.5s;
+}
+button:hover{
+	transform: translateY(-10px);
+	background-color: #009933;
+	color: #fff;
+}
+
+input:focus{
+	border: 1px solid rgb(0, 0, 0);
+}
+
+
+.terms {
+	margin-top: 1rem;
+}
+.terms input{
+	height: 1em;
+	width: 1em;
+	vertical-align: middle;
+	cursor: pointer;
+}
+.terms label{
+	font-size: 0.7rem;
+}
+.terms a{
+	color: #009933;
+	text-decoration: none;
+}
+
+.member{
+	font-size: 0.8rem;
+	margin-top: 1.4rem;
+	color: #000;
+}
+.member a{
+	color: limegreen;
+	text-decoration: none;
+}
+
+.recover{
+	text-align: right;
+	font-size: 0.7rem;
+	margin: 0.3rem 1.4rem 0 0;
+}
+
+.recover a{
+	text-decoration: none;
+	color: #009933;
+}
+
+@media (max-width: 1280px){
+    header{
+        padding: 14px 2%;
+        transition: .2s;
+    }
+    .navbar a{
+        padding: 5px 0;
+        margin: 0px 20px;
+    }
+}
+
+@media (max-width: 1090px){
+    #menu-icon{
+        display: block;
+    }
+    .navbar{
+        position: absolute;
+        top: 180%;
+        right: -100%;
+        width: 150px;
+        height: auto;
+        background: rgb(92, 252, 92);
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        border-radius: 10px;
+        transition: all .50s ease;
+
+    }
+    .navbar a{
+        display: block;
+        margin: 12px 0;
+        padding: 0px 20px;
+        transition: all .50s ease;
+    }
+    .navbar a:hover{
+        color: rgb(0, 36, 15);
+        transform: translateY(5px);
+    }
+    .navbar a.active{
+        color: rgb(0, 36, 15);
+    }
+    .navbar.open{
+        right: 2%;
+      
+       
+    }
+}

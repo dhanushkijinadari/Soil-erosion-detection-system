@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Create a new account</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+
+        <!-- remixicons -->
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+        
+        
+        <!--boxicons-->
+        <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+        
+        <!--google fonts-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500&display=swap" rel="stylesheet">
+
+
+    </head>
+    <body>
+        <header>
+            <a href="Index.html" class="logo"><i class="ri-plant-fill"></i><span>Soil Erosion</span></a>
+
+            <ul class="navbar">
+                <li><a href="Index.html" >Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="signin.html">Sign In</a></li>
+                <li><a href="signup.html" class="active">Sign Up</a></li>
+            </ul>
+
+            <div class="main">
+                <div class="bx bx-menu" id="menu-icon"></div>
+            </div>
+        </header>
+        
+            
+                    <div class="wrapper">
+                        <h1>Sign Up</h1>
+                        <form action="#">
+                            <input type="text" placeholder="Username">
+                            <input type="text" placeholder="Name">
+                            <input type="text" placeholder="email">
+                            <select id="district" name="District">
+                                <option value="">Choose your District</option>
+                                <option value="Colombo">Colombo</option>
+                                <option value="Kalutara">Kalutara</option>
+                                <option value="Gampaha">Gampaha</option>
+                            </select>
+                            <input type="password" placeholder="Password">
+                            <input type="password" placeholder="Re-Enter Password">
+                        </form>
+                        <div class="terms">
+                            <input type="checkbox" id="checkbox">
+                            <label for="checkbox">I agree to this <a href="#">Terms & Conditions</a></label>
+                        </div>
+                        <button>Sign Up</button>
+                        <div class="member">Already a user ? <a href="signin.html">Sign in here</a></div>
+                    </div>
+                
+       
+        <!--js link-->
+        <script type="text/javascript" src="script.js"></script>
+    </body>
+</html>
