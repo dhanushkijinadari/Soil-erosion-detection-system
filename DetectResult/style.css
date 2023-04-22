@@ -1,5 +1,7 @@
 /* Style the header with a grey background and some padding */
-
+body{
+  background:linear-gradient(109.6deg, rgb(217, 250, 158) 11.2%, rgb(128, 251, 174) 91.1%);
+}
 .header.img {
   padding: 0;
 }
@@ -17,6 +19,7 @@
   margin-top: 25px;
   font-weight: bold;
 }
+
 
 /* Style the logo link (notice that we set the same value of line-height and font-size to prevent the header to increase when the font gets bigger */
 
@@ -52,13 +55,13 @@
   font-size: 25px;
   font-family:Helvetica;
   position: absolute;
-  top:170px;
+  top:120px;
   
 }
 
   
 .rectangle img {
-  margin-top: 100px;
+  margin-top: 80px;
   margin-left: 85px;
 
 }
@@ -70,26 +73,26 @@
   margin: 1px 500px;
   bottom: 85px;
   position: absolute;
-  top: 250px;
+  top: 200px;
 
 }
 
 .form2 h3{
   margin-left: 85px;
   position: absolute;
-  bottom: 145px;
+  bottom: 185px;
  
 }
 .form3 {
   margin-left: 85px;
   position: absolute;
-  bottom: 50px;
+  bottom: 80px;
 }
 
 .form4 {
   margin-left: 500px;
   position: absolute;
-  bottom: 30px;
+  bottom: 60px;
 }
 
 /* Add media queries for responsiveness - when the screen is 900px wide or less, stack the links on top of each other */
@@ -106,5 +109,6 @@
     float: none;
   }
 }
+
 
 
