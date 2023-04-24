@@ -1,7 +1,16 @@
 /* Style the header with a grey background and some padding */
-body{
-  background:linear-gradient(109.6deg, rgb(217, 250, 158) 11.2%, rgb(128, 251, 174) 91.1%);
+
+
+*::selection {
+    background: var(--main-color);
+    color: #fff;
 }
+
+body{
+  color: var(--text-color);
+    background: linear-gradient(109.6deg, rgb(200, 255, 106) 11.2%, rgb(49, 214, 110) 91.1%);
+}
+
 .header.img {
   padding: 0;
 }
@@ -11,14 +20,17 @@ body{
   float: left;
   color: black;
   text-align: center;
-  padding: 18px;
+  padding: 10px 20px;
   text-decoration: none;
-  font-size: 18px;
+  font-size: 1.1rem;
   line-height: 7px;
   border-radius: 4px;
   margin-top: 25px;
-  font-weight: bold;
+  font-weight: 600;
+  display: flex;
 }
+
+
 
 
 /* Style the logo link (notice that we set the same value of line-height and font-size to prevent the header to increase when the font gets bigger */
@@ -26,8 +38,7 @@ body{
 
 /* Change the background color on mouse-over */
 .header a:hover {
-  background-color:#90EE90;
-  color: black;
+  color: white;
 }
 
 /* Style the active/current link*/
@@ -44,8 +55,8 @@ body{
 .rectangle {
   height:440px;
   width: 800px;
-  background-color:#93C572;
-  opacity: 0.7;
+  background-color:  #e6ffb3;
+  opacity: 0.5;
   margin-left:270px;
   margin-top: 45px;
 
@@ -81,6 +92,7 @@ body{
   margin-left: 85px;
   position: absolute;
   bottom: 185px;
+  color: black;
  
 }
 .form3 {
@@ -109,6 +121,7 @@ body{
     float: none;
   }
 }
+
 
 
 
