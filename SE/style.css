@@ -55,14 +55,18 @@ header{
     display: flex;
  }
  .navbar a{
-    color: var(--text-color);
+    color: black;
     font-size: 1.1rem;
     padding: 10px 20px;
     font-weight: 600;
  }
  .navbar a:hover{
-    color: var(--main-color);
+    color: white;
     transition: .4s;
+}
+.navbar a.active {
+  background-color: #228B22;
+  color: white;
 }
 
 #menu-icon{
