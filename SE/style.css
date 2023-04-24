@@ -174,6 +174,15 @@ section{
     font-weight: 500;
     margin: 4px 0 10px;
 }
+
+.box p{
+    margin: 0.8rem 0 1.8rem;
+    line-height: 1.2;
+    font-size: medium;
+    color: var(--main-color);
+    text-align: justify;
+}
+
 .box a{
     color: #000;
     font-size: 0.9rem;
@@ -309,6 +318,132 @@ input:focus{
 	color: #009933;
 }
 
+.info{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 1.5rem;
+    align-items: center;
+}
+
+.info-text span{
+    color: var(--main-color);
+    font-weight: 600;
+    font-size: var(--h2-font);
+}
+.info-text p{
+        margin: 0.8rem 0 1.8rem;
+        line-height: 1.2;
+        font-size: medium;
+        color: var(--main-color);
+        text-align: justify;
+}
+
+/*Upload*/
+.rectangle {
+    width: 600px;
+    height: 350px;
+    background-color: #ECFFDC;
+    opacity: 0.7;
+    justify-content: center;
+    position: relative;
+    align-items: center;
+    margin: 30px auto;
+   
+}
+  
+  .container {
+    height: 100vh;
+    width: 100%;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    
+  }
+  
+  .card {
+    border-radius: 10px;
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.3);
+    width: 600px;
+    height: 350px;
+    background-color: #ffffff;
+    padding: 10px 30px 40px;
+    margin-bottom: 100px;
+    
+  }
+  
+  .drop_box{
+    width: 330px;
+    height: auto;
+    position: relative;
+    align-items : center;
+    justify-content: center;
+	padding: 1rem 1rem;
+	margin: 30px auto;
+	background-color: #ffffff;
+	border-radius: 10px;
+	text-align: center;
+	box-shadow: 0 20px 35px rgba(0, 0, 0, 0.1);
+	flex-direction: column;
+    border-style: dotted;
+    border-color: #000;
+}
+
+.drop_box span{
+    color: #000;
+    font-size: 1rem;
+    font-weight: 500;
+    margin: 4px 0 10px;
+}
+
+  .drop_box h4 {
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--main-color);
+  }
+  
+  .drop_box p {
+    margin: 0.8rem 0 1.8rem;
+    line-height: 1.2;
+    font-size: medium;
+    color: var(--main-color);
+    text-align: center;
+  }
+  
+  .upload_btn{
+    display: inline-block;
+    padding: 10px 20px;
+    background: var(--main-color);
+    color: #fff;
+    border-radius: 0.5rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.button {
+    background: var(--main-color);
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    align-items: center;
+    border-radius: 0.5rem;
+    text-decoration: none;
+    font-size: 12px;
+    margin-left: 255px;
+    margin-top: 2px;
+    display: inline-block;
+  }
+
+  .form input {
+    margin: 10px 0;
+    width: 100%;
+    background-color: #e2e2e2;
+    border: none;
+    outline: none;
+    padding: 12px 20px;
+    border-radius: 4px;
+  }
+  
+
 
 @media (max-width: 1560px){
     header{
@@ -366,14 +501,18 @@ input:focus{
     }
     .about-img{
         order: 2;
-    }uy 
+    }
     section{
         padding: 100px 7%;
     }
+    
 }
 
 @media (max-width: 575px){
     .col{
         width: 100%;
     }
+    .rectangle{
+        float: none;
+      }
 }
