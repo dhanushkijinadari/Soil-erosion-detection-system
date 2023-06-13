@@ -18,7 +18,7 @@
     </head>
     <body>
         <header>
-            <a href="#" class="logo"> <img src="img/Logo (2).png"></a>
+            <a href="index.html" class="logo"> <img src="img/Logo (2).png"></a>
             <div class="bx bx-menu" id="menu-icon"></div>
     
             <ul class="navbar">
@@ -27,6 +27,7 @@
                 <li><a href="login.html">Login</a></li>
                 <li><a href="info.html">Info</a></li>
                 <li><a href="contact.html">Contact</a></li>
+    
             </ul>
         </header>
     
@@ -39,25 +40,26 @@
             </div>
 
             <div class="wrapper">
-                <form action="#">
-                    <input type="text" placeholder="Username">
-                    <input type="text" placeholder="Name">
-                    <input type="text" placeholder="email">
-                    <select id="district" name="District">
+                <form action="C:\Users\Uvini\Desktop\research\SE\test.php" method="POST">
+                    <input type="text" placeholder="Username" name="username">
+                    <input type="text" placeholder="Name" name="name">
+                    <input type="text" placeholder="email" name="email">
+                    <select id="district" name="district">
                         <option value="">Choose your District</option>
-                        <option value="Colombo">Colombo</option>
-                        <option value="Kalutara">Kalutara</option>
-                        <option value="Gampaha">Gampaha</option>
+                        <option value="C">Colombo</option>
+                        <option value="K">Kalutara</option>
+                        <option value="G">Gampaha</option>
                     </select>
-                    <input type="password" placeholder="Password">
-                    <input type="password" placeholder="Re-Enter Password">
+                    <input type="password" placeholder="Password" name="password">
+                    <!--<input type="password" placeholder="Re-Enter Password">-->
                 </form>
                 <div class="terms">
                     <input type="checkbox" id="checkbox">
                     <label for="checkbox"><span>I agree to this <a href="#">Terms & Conditions</span></a></label>
                 </div>
                 <br>
-                <a href="#" class="btn">Create Account</a>
+                <!--<a href="test.php" class="btn">Create Account</a>-->
+                <input type="submit" class="btn" />
                 <div class="member">Already a user ? <a href="login.html">Sign in here</a></div>
             </div>
     
@@ -72,12 +74,12 @@
                     <div class="col">
                         <h4>Quick Links</h4>
                         <ul>
-                        <li style="display: inline"><a href="index.html">Home</a></li>
-                        <li style="display: inline"><a href="signup.html">Sign Up</a></li>
-                        <li style="display: inline"><a href="login.html">Login</a></li>
-                        <li style="display: inline"><a href="info.html">Info</a></li>
-                        <li style="display: inline"><a href="contact.html">Contact</a></li>
-                    </ul>
+                            <li style="display: inline"><a href="index.html">Home</a></li>
+                            <li style="display: inline"><a href="signup.html">Sign Up</a></li>
+                            <li style="display: inline"><a href="login.html">Login</a></li>
+                            <li style="display: inline"><a href="info.html">Info</a></li>
+                            <li style="display: inline"><a href="contact.html">Contact</a></li>
+                        </ul>
     
                         <div class="copyright">
                             <br><p class="copyright-text">Copyright &copy; 2023 All Rights Reserved by FOT/ICT/2018B3 - 11
