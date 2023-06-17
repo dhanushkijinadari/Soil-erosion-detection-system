@@ -1,7 +1,7 @@
 <?php
 session_start();
 
-if(isset($_SESSION['id']) && isset($SESSION['username'])){
+if(isset($_SESSION['id']) && isset($_SESSION['username'])){
    
 }
 ?>
@@ -42,29 +42,30 @@ if(isset($_SESSION['id']) && isset($SESSION['username'])){
     <div class="rectangle">
       <div class="heading">
         <br>
+
         <span>Upload image here</span>
       </div>
+
       <div class="upload_container">
-        <div class="upload_card">
-          <div class="drop_box">
-            <h4>Select File here</h4>
-            <p>Files Supported: JPEG, PNG</p>
-            <input type="file" hidden accept=".JPEG, PNG" id="fileID" style="display:none;">
-            <button class="btn">Choose File</button>
+
+          <div class="upload_card">
+            <div class="drop_box">
+              <h4>Select File here</h4>
+              <p>Files Supported: JPEG, PNG</p>
+              <input type="file" name="file" accept=".jpeg, .png" id="fileID" style="display:none;">
+              <button class="btn">Choose File</button>
+            </div>
           </div>
 
-        </div>
         <div class="note" style="color: black; margin-top: 100px; font-weight: 400px;">
           <h3><b>Note:</b></h3>
-          <p><b>Image Size       :</b> Image file size should be less than 5 MB.</p>
-          <p><b>Image Format     :</b> Image formats can be JPEG or PNG.</p>
-          <p><b>Image Orientation:</b> Check the orientation of the image is correctly aligned.</p>
-          <p><b>Image Quality    :</b> Make sure to provide a good quality image for more accurate result.</p>
-    </div>
+          <p><b>Image Size       :</b> Image file size should be less than 5 MB.</p>
+          <p><b>Image Format     :</b> Image formats can be JPEG or PNG.</p>
+          <p><b>Image Orientation:</b> Check the orientation of the image is correctly aligned.</p>
+          <p><b>Image Quality    :</b> Make sure to provide a good quality image for more accurate result.</p>
+        </div>
       </div>
-
     </div>
-   
   </section>
 
   <!---Footer Start------>
@@ -102,7 +103,7 @@ if(isset($_SESSION['id']) && isset($SESSION['username'])){
       var fileName = e.target.files[0].name;
       let filedata = `
         <form>
-          <div class="form">
+          <div class="form action="upload_img.php" method="post" enctype="multipart/form-data"">
             <h4>${fileName}</h4>
             <input type="email" placeholder="Enter email to upload file">
             <button class="btn">Upload</button>
@@ -115,12 +116,27 @@ if(isset($_SESSION['id']) && isset($SESSION['username'])){
         event.preventDefault();
         // Perform any necessary validation or processing here
 
-        // Perform the desired action without redirecting
-        console.log("File upload action performed");
-        // Add your code here to handle the file upload action
+        // Get the selected file
+        const file = input.files[0];
 
-        // Redirect to result.html
-        window.location.href = "result.html";
+        // Create FormData object to send the file to the PHP script
+        const formData = new FormData();
+        formData.append("file", file);
+
+        // Send the file to the PHP script using AJAX
+        const xhr = new XMLHttpRequest();
+        xhr.open("POST", "upload_img.php");
+        xhr.onreadystatechange = function () {
+          if (xhr.readyState === XMLHttpRequest.DONE) {
+            if (xhr.status === 200) {
+              // Redirect to result.html
+              window.location.href = "result.html";
+            } else {
+              console.log("File upload failed");
+            }
+          }
+        };
+        xhr.send(formData);
       });
     });
   </script>
